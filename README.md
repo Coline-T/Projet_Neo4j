@@ -1,11 +1,53 @@
-# Projet numéro 2 : Choisir un sujet et un jeu de données à importer dans Neo4j
+# Projet Neo4j - Modélisation de la série "Nous les Menteurs"
+
+Ce projet vise à représenter et analyser les relations entre les personnages du roman et de la série *Nous les menteurs* en utilisant une base de données orientée graphes avec Neo4j.  
+L’objectif : visualiser et explorer les liens familiaux et les interactions clés de l’histoire.
+
+---
+## Table des matières 
+- Contexte du projet
+- Technologies Utilisées
+- Structure du projet
+- Étapes du projet
+- Auteur
+
+--- 
 
 ## Contexte du projet
-Pour ce projet, j'ai décidé de m'inspirer de l'exemple qu'on avait fait en cours avec les données de Game of Thrones et de prendre les données d'une autre série : Nous les menteurs. J'ai choisi cette série car elle est basé sur une histoire familiale et il y a donc de nombreux liens entre les personnages, ce qui est intéressant à visualiser pour ce projet.
+
+Dans les bases de données relationnelles classiques, il peut être difficile et coûteux d’explorer des relations complexes entre entités.  
+Neo4j permet de modéliser naturellement des réseaux sociaux, des liens familiaux, ou encore des graphes de personnages littéraires.
+
+Ce projet montre comment :
+- transformer des données de personnages en un graphe
+- analyser leurs relations via des requêtes Cypher
+- visualiser les liens significatifs de l’intrigue
+  
+---
+
+##  Technologies Utilisées
+
+| Outil | Rôle |
+|-------|------|
+| Neo4j Desktop | Création et gestion de la base de données |
+| Langage Cypher | Création des nœuds, relations et requêtes |
+| Fichier CSV | Import des données |
+
+---
+
+## Structure du projet
+Projet_Neo4j/
+│
+├── scripts/            # Scripts Cypher pour créer le graphe
+├── images/             # Captures pour la documentation
+└── README.md           # Documentation du projet
+
+---
 
 ## Étapes du projet
 1. **Installation de Neo4j Desktop** :
 C'est le logiciel qui va servir à réaliser le projet.
+
   
 2. **Création d'une instance et de la base de données** :
 Pour commencer ce projet, il a fallu créer une instance dans lequel par la suite, on y mettra les bases de données. 
@@ -22,11 +64,9 @@ Cliquer sur connecter pour se connecter à l'instance datacloud :
 <img width="1151" height="567" alt="connecte instance 2" src="https://github.com/user-attachments/assets/80ab4d3e-4fb4-4f52-b929-67a0a5e6c4e9" />
 
 
-
 4. **Connexion à la base de données (database)** :
 Maintenant que l'instance est connectée, il faut choisir une base de données et s'y connecter également (voir capture ci-dessous).
 <img width="688" height="40" alt="connecte database" src="https://github.com/user-attachments/assets/c2c48243-0393-4c5f-ad99-866df02214bf" />
-
 
 
 5. **Importation du script dans les requêtes** :
@@ -76,3 +116,9 @@ Cette requête permet de connaître tous les liens parents enfants qui existent 
 
 Cette requête permet d'avoir une vision plus globale de tous les types de relations existant entre les personnages.
 <img width="1035" height="683" alt="requete pour total lien et relations" src="https://github.com/user-attachments/assets/70c8d88d-0584-4f8d-a6ac-c009d0d114bb" />
+
+
+---
+
+## Auteur
+Projet réalisé par Coline T.
